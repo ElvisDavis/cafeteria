@@ -13,12 +13,7 @@
             width: 80%;
             background-color: antiquewhite;
         }
-        .cabecera-izquierda{
-            width: 20%;
-            background-color: blue;
-            margin-top: -20px;
-            margin-left: 1200px;
-        }
+        
 
         a{
             color: white;
@@ -27,24 +22,38 @@
         .menu{
             color: turquoise;
         }
+
+        #btn-acerca-de{
+            background-color: black;
+            /*el padding me da margenes internos en cada elemento*/
+            padding: 10px 30px 50px 50px;
+            /*el margin me da margenes externos en cada elemento*/
+            margin: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
     </style>
 </head>
 <body>
+    <!--
+        Los nombres de los proyectos no pueden tener espacios, por eso se usa el guion bajo (_)
+        o el guion (-) para separar las palabras. En este caso se usó el guion bajo (_).
+        Tampoco puede utiliza o empezar con simboles especiales o numeros.
+        Tampoco los proyectos se generan o se crean en mayusculas. 
+        No se puede tener un nombre de proyecto muy largo, por eso se recomienda usar nombres cortos.    
+    -->
     <!--Inicio del header-->
     <header>
         <!--Menú de navegación-->
         <div class="cabecera-derecha">
             <nav>
-                <a class="menu" href="#" id="btn-acerca-de">Acerca de</a>
+                <a href="#" id="btn-acerca-de">Acerca de</a>
                 <a href="#" id="btn-menu">Menú</a>
                 <a href="#" id="btn-galeria">Galería</a>
                 <a class="menu" href="#" id="btn-ubicacion">Ubicación</a>
     
             </nav>
         </div>
-        <div class="cabecera-izquierda">
-            <a href="">Hola</a>
-        </div>
+        
         
     </header>
     
