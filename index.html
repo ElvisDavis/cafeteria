@@ -1,38 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
     <title>Cafeteria San Francisco</title>
-    <style>
-        body {
-            background-color: #c2dbd8;
-        }
 
-        .cabecera-derecha{
-            width: 80%;
-            background-color: antiquewhite;
-        }
-        
-
-        a{
-            color: white;
-        }
-
-        .menu{
-            color: turquoise;
-        }
-
-        #btn-acerca-de{
-            background-color: black;
-            /*el padding me da margenes internos en cada elemento*/
-            padding: 10px 30px 50px 50px;
-            /*el margin me da margenes externos en cada elemento*/
-            margin: 10px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-    </style>
 </head>
+
 <body>
     <!--
         Los nombres de los proyectos no pueden tener espacios, por eso se usa el guion bajo (_)
@@ -44,18 +20,117 @@
     <!--Inicio del header-->
     <header>
         <!--Menú de navegación-->
-        <div class="cabecera-derecha">
+        <div>
+            
             <nav>
                 <a href="#" id="btn-acerca-de">Acerca de</a>
                 <a href="#" id="btn-menu">Menú</a>
                 <a href="#" id="btn-galeria">Galería</a>
                 <a class="menu" href="#" id="btn-ubicacion">Ubicación</a>
-    
+
             </nav>
+            <div>
+                <h1>Cafetería <span>San Francisco</span></h1>
+                <h3>Un refugio del tiempo, donde el corazón se abriga entre café y recuerdos</h3>
+            </div>
         </div>
-        
-        
-    </header>
-    
+    </header><!--Fin del header-->
+    <!--Inicio del la sección main-->
+    <section>
+        <!--Inicio Acerca de-->
+        <section id="acerca-de">
+            <div>
+                <div>
+                    <img src="img/acerca-de.jpg" alt="Acerca de lobby">
+                </div>
+                <article>
+                    <h3>Acerca de</h3>
+                    <p>
+                        Fundada en 1964 en el corazón histórico de Quito, nuestra cafetería es mucho más que un lugar donde se sirve café; 
+                        es un rincón donde el tiempo parece detenerse, donde cada taza lleva consigo el susurro de generaciones pasadas. 
+                        Enmarcada por la arquitectura colonial de la capital del Ecuador, esta cafetería nació como un espacio íntimo en medio 
+                        de la agitada vida citadina, y con el pasar de los años, se ha convertido en un refugio emocional para quienes buscan 
+                        algo más que una bebida caliente. Aquí, las paredes no solo sostienen ladrillos: guardan secretos, sonrisas y miradas 
+                        que se cruzaron por primera vez en medio del aroma inconfundible del café recién pasado. Los muebles de madera antigua, 
+                        las lámparas de hierro forjado, y el eco suave de boleros y tangos, recrean un ambiente acogedor donde cada visitante se 
+                        convierte en parte de una historia viva.
+                    </p>
+                    <p>
+                        Desde sus inicios, la cafetería ha sido testigo de innumerables encuentros: desde tertulias bohemias de artistas y escritores,
+                        hasta amores que florecieron en mesas junto a la ventana. Con una receta única transmitida de generación en generación, 
+                        el café que servimos es una mezcla artesanal que honra las tradiciones cafeteras del país, 
+                        especialmente de las tierras altas y las zonas cafetaleras más emblemáticas del Ecuador. 
+                        Nuestro compromiso no es solo con el sabor, sino con la experiencia: cada detalle ha sido pensado para invitar al 
+                        visitante a un viaje emocional hacia épocas más simples, más cálidas, más humanas. 
+                        Hoy, seis décadas después de su apertura, seguimos abriendo nuestras puertas con la misma pasión de siempre, 
+                        convencidos de que el buen café no solo se saborea… se recuerda.
+
+                    </p>
+                </article>
+            </div>
+        </section><!--Fin Acerca de-->
+        <!--Inicio de la sección menú-->
+        <section class="menu">
+            <div class="contenedor">
+                <h3 class="titulo" id="platillos">Menú</h3>
+                <div class="contenedor-menu2">
+                    <article>
+                        <p class="cotegoria">De comer</p>
+                        <div class="platillo">
+                            <p class="nombre">Arroz camarón</p>
+                            <p class="precio">$8.50</p>
+                            <p class="descripcion">El arroz con camarón viene arroz, camarón, platano, yuca frita</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Aroz con pollo</p>
+                            <p class="precio">$5.50</p>
+                            <p class="descripcion">El arroz con pollo viene arroz, pollo, platano, yuca frita</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Arroz con carne</p>
+                            <p class="precio">$6.50</p>
+                            <p class="descripcion">El arroz con carne viene arroz, carne, platano, yuca frita</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Arroz con menestra</p>
+                            <p class="precio">$8.50</p>
+                            <p class="descripcion">El arroz con menestra viene arroz, menestra, platano, yuca frita</p>
+
+                        </div>
+
+                    </article><!--Fin de la sección de comida-->
+                    <!--Inicio de sección bebidas-->
+                    <article>
+                        <p class="categoria">Bebidas</p>
+                        <div class="platillo">
+                            <p class="nombre">Café</p>
+                            <p class="precio">$1.50</p>
+                            <p class="descripcion">Café americano</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Café con leche</p>
+                            <p class="precio">$2.00</p>
+                            <p class="descripcion">Café con leche</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Café con leche condensada</p>
+                            <p class="precio">$2.50</p>
+                            <p class="descripcion">Café con leche condensada</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Café con leche evaporada</p>
+                            <p class="precio">$2.50</p>
+                            <p class="descripcion">Café con leche evaporada</p> 
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
 </body>
+
 </html>
