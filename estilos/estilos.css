@@ -1,44 +1,117 @@
 /*Aqui va a ir los estilos css para el index.html*/
-
-
-
-* 
-{
+* {
+    /*Elimina el margen por defecto de todos los elementos HTML*/
     margin: 0;
+    /*Elimina el padding por defecto de todos los elementos HTML*/
     padding: 0;
+    /*Definimos el modelo de cajas para navegadores basados en webkit
+    googleChrome, internet exploret, edge*/
+    -webkit-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en mozilla
+    firefox, opera*/
+    -moz-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados en el estandar*/
     box-sizing: border-box;
 }
 
-/*Voy a darle estilos al body*/
-body 
-{
-    background-color: azure;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+/*Definimos los estilos para el body*/
+body {
+    font-family: "Open Sans", Arial, Sans-serif;
+    font-size: 16px;
 }
 
-/*Voy a darle estilos al header*/
-header 
-{
-    background-color: bisque;
+/*Trabajamos en los estilos de la clase contenedor*/
+.contenedor {
+    /*Definir el ancho del contenedor*/
+    width: 90%;
+    /*Definimos el color de fondo del contenedor
+    background-color: aqua;*/
+    /*Definimos la anchura maxima del contenedor*/
+    max-width: 1000px;
+    /*Definimos el margen en automatico para centrar el contenedor*/
+    margin: auto;
+    /*Ocultamos el desbordamiento del contendor*/
+    overflow: hidden;
+}
+
+/*Le damos estilos al header*/
+header {
+    /*Definimos el tamaño del header a un 100%*/
+    width: 100%;
+    background: url('../img/bg.jpg') #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+
+}
+
+/*Le damos estilos al header y que busque una clase que se llame contenedor*/
+header .contenedor {
+    position: relative;
+    height: 700px;
+}
+
+/*Le damos estilos al menú dentro del header*/
+header .menu {
+    /*Le damos el tamaño de la anchura*/
+    width: 100%;
+    /*Le decimos que alinee el texto a la derecha*/
     text-align: right;
 }
-
-header h1 
-{
-    color: rgb(36, 36, 173);
-}
-
-.menu 
-{
-    text-align: center;
-}
-
-a{
+/*Le damos estilos a las eticas del menú*/
+header .menu a{
+    /*Le voy a dar un color a las etiquetas a*/
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    /*display: inline-block;*/
+    margin: 40px 20px;
     text-decoration: none;
+    position: relative;
+}   
+/*Utilizamos la seudoclase hover*/
+header .menu a:hover{
+    color: #18a08c;
+    text-decoration: underline;
 }
 
-a:hover{
-    text-decoration: underline;
-    color: rgb(52, 201, 35);
+header .texto{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+
+header .texto .nombre{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+header .texto .nombre span{
+    font-weight: 300;
+}
+header .texto h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+/*------MAIN-------*/
+.main{
+    background: url('../img/bg-textura.png');
+    background-repeat: repeat;
+}
+/*sección acerca de*/
+.main .acerca-de .contenedor{
+    overflow: visible;
+    position: relative;
+}
+
+.main .acerca-de .foto{
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
 }
